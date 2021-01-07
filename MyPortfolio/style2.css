@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px;
+}
+
+/* Ini banner */
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner::after {
+  content: "";
+  display: block;
+  left: 0%;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 41, 59, 1),
+    rgba(0, 0, 0, 0)
+  );
+  position: absolute;
+  bottom: 0;
+}
+
+.textBx {
+  z-index: 1;
+  position: relative;
+}
+
+.banner h2 {
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.banner h2 span {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.banner h3 {
+  font-size: 1.5em;
+  color: #ffffff;
+  font-weight: 500;
+}
+/* Akhir banner */
+
+/* Button */
+.btn {
+  position: relative;
+  background: #002a3d;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+/* Akhir Button */
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header.sticky ul li a {
+  color: #111;
+}
+/* Akhir Header */
+
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -70px;
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+}
+
+.isikonten {
+  display: block;
+  margin: auto;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* About */
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+/* Akhir about */
+
+/* Content */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentBx {
+  padding-right: 30px;
+}
+
+.contentBx h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.w50 {
+  min-width: 50%;
+}
+
+/* Education */
+.education-title,
+.experience {
+  display: block;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.education__container {
+  row-gap: 2rem;
+}
+
+.education__content {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+}
+
+.education__year,
+.education__race {
+  font-size: 18px;
+  margin-bottom: 0.25rem;
+}
+
+.education__university,
+.education__specialty {
+  display: block;
+  font-size: 1rem;
+}
+
+.education__year,
+.education__university {
+  text-align: right;
+}
+
+.education__time {
+  padding: 0 1rem;
+  justify-self: center;
+}
+
+.education__rounder {
+  position: relative;
+  display: inline-block;
+  width: 0.75rem;
+  height: 12px;
+  background-color: #002a3d;
+  border-radius: 50%;
+}
+
+.education__rounder::before {
+  content: "";
+  position: absolute;
+  transform: translate(-4px, -4px);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #002a3d;
+  border-radius: 50%;
+}
+
+.education__line {
+  display: block;
+  height: 90%;
+  width: 2px;
+  background-color: #002a3d;
+  transform: translate(5px, 4px);
+}
+
+img {
+  max-width: 100%;
+}
+/* Akhir Content */
+
+/* Work */
+#work {
+  position: relative;
+  background: url(img/hutan2.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading.white {
+  color: #222;
+}
+
+.work .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.work .content .workBx {
+  width: 50%;
+  padding: 20px;
+}
+
+.work .content .workBx img {
+  max-width: 100%;
+}
+/* Akhir Work */
+
+/* Footer */
+footer {
+  background: #222;
+  color: #666;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 5px auto;
+  line-height: 15px;
+  font-size: 14px;
+}
+
+.footer-content a {
+  font-weight: 700;
+  color: #666;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.socials li {
+  margin: 0 18px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #666;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4 ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+/* Akhir Footer */
+
+/* Responsive */
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .menu.active {
+    left: 0;
+  }
+  header ul li a {
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active {
+    background: url(img/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  header.sticky .toggle {
+    filter: invert(1);
+  }
+  section {
+    padding: 100px 50px;
+  }
+  .banner {
+    padding: 150px 50px 100px;
+  }
+  .banner h2 {
+    font-size: 1.5em;
+  }
+  .banner h3 {
+    font-size: 1em;
+  }
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2 {
+    font-size: 24px;
+  }
+  .contentBx h3 {
+    font-size: 20px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .w50 {
+    margin-bottom: 20px;
+  }
+  .services .content .servicesBx {
+    margin: 10px;
+  }
+  .work .content .workBx {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  header,
+  header.sticky {
+    padding: 20px 20px;
+  }
+  .banner {
+    padding: 150px 20px 100px;
+  }
+  section {
+    padding: 100px 20px;
+  }
+}
+/* Akhir Responsive */
